@@ -1,0 +1,131 @@
+/* App Container */
+.App {
+  text-align: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+h1 {
+  color: #333;
+}
+
+/* Todo Form */
+/* Style the form container */
+.todo-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.todo-input, .todo-date-input {
+  padding: 0.6rem 0.9rem;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  width: 180px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.todo-input:focus, .todo-date-input:focus {
+  border-color: #007bff;
+}
+
+.todo-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.todo-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+/* Todo List Container */
+.todo-list {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Todo Item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f4f4f4;
+  margin: 0.5rem 0;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  gap: 1rem;
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Checkbox */
+.todo-item input[type="checkbox"] {
+  margin-right: 0.5rem;
+  transform: scale(1.2);
+}
+
+/* Todo Content */
+.todo-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  flex: 1;
+  text-align: left;
+}
+
+.todo-text {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.todo-date {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.todo-due-date {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Status */
+.todo-item .status {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #555;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/* Delete Button */
+.todo-item button {
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.todo-item button:hover {
+  background: #d32f2f;
+}
